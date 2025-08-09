@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Hut - Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍕 STAR HUT</div>                       
+       
+    <nav>
+    
+      <a href="#home">Home</a>
+      <a href="#featured">Deals</a>
+      <a href="#location">Locations</a>
+      <a href="#contact">Contact</a>
+  
+    </nav>
+
+    <button class="cta-button">Order Now</button>
+
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> 
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#featured">Deals</a>
+    <a href="#location">Locations</a>
+    <a href="#contact">Contact</a>
+    <button class="cta-button">Order Now</button>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('show');
+    });
+  </script>
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Hot. Fresh. Delivered.</h1>
+      <p>Your favorite pizza is just a click away. Order now and enjoy exclusive deals!</p>
+      <div class="hero-buttons">
+        <button class="cta-button">Order Now</button>
+        <button class="secondary-button">View Menu</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="featured" class="featured-section">
+  <h2 class="section-title">🔥 Featured Favorites</h2>
+  <div class="featured-grid">
+    <div class="featured-card">
+      <img src=" https://imgs.search.brave.com/ceUGmOHFe28gpUYygrplBlbRS8vTvsnWLLF9NDOmiK0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzE2LzgyLzU0/LzM2MF9GXzkxNjgy/NTQzNl9ScE5xc0VG/YnV5MlpsMW9lZGFX/UlRxTk9Pd29zYjgz/eC5qcGc" alt="Pepperoni Pizza">
+      <h3>Pepperoni Classic</h3>
+      <p>Loaded with cheese & spicy pepperoni. A timeless favorite.</p>
+      <button class="cta-button small">Add to Cart</button>
+    </div>
+
+    <div class="featured-card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Veggie Supreme">
+      <h3>Veggie Supreme</h3>
+      <p>Fresh veggies and creamy cheese on a crispy base.</p>
+      <button class="cta-button small">Add to Cart</button>
+    </div>
+
+    <div class="featured-card">
+      <img src="https://imgs.search.brave.com/ElFF_rhFbJ6LCrKflVqD8UbX9Tud-2inFhciUHH4PGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cHJv/eHguY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEwL2tm/Yy0yRFRDb21iby53/ZWJw" alt="Meat Lovers Combo">
+      <h3>Meat Lovers Combo</h3>
+      <p>Perfect combo for two – meat feast + sides + drink.</p>
+      <button class="cta-button small">Add to Cart</button>
+    </div>
+  </div>
+</section>
+<section id="menu" class="menu-preview-section">
+  <h2 class="section-title">🍕 Menu Preview</h2>
+  <div class="menu-grid">
+
+     <div class="menu-item">
+     <img src="https://imgs.search.brave.com/lnmpQseHrOtKN9pw9ua7CJNxQligSkj9GXEGTOw-Zxg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nb29k/Y2hlYXBlYXRzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/MC8wNy9jaGVlc2Ut/cGl6emEtcHJlcC0z/LmpwZw" alt="Cheese Pizza">
+      <h3>Cheese Pizza</h3>
+      <p>Rich mozzarella, cheddar, and parmesan blend.</p>
+      <span class="price">$11.49</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/lkw9CzvrT_RX59FtLMfFh6aVk6sJhgz9bHy8RKEpfwM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg5/NDg2Mzk5L3Bob3Rv/L2JicS1jaGlja2Vu/LXBpenphLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1ERWsy/Z2JEem5LdkJBSFdX/ZWppaExVb1FfZk9G/SzZZU2ZvVHREVkhF/MWJVPQ" alt="BBQ Chicken">
+      <h3>BBQ Chicken</h3>
+      <p>Grilled chicken, BBQ sauce, onions, and herbs.</p>
+      <span class="price">$11.49</span>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/o5pJXC0k3EqIEqF3kdwk3XE-DIX1ipi-ZAHbdyIJt2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZm9vZDUyLmNv/bS9adTZjaHhOVFJG/d1NnR2N6T18wRFlP/UllWX1E9L2I2ODYx/MGIzLWNjM2UtNDgx/Mi1hZjJjLTQ0OWM2/OGMzNTI3My0tMjAx/OC0xMTI3X2tlbi1m/b3JraXNoLWhhd2Fp/aWFuLXBpenphLWdl/bml1c18zeDJfcm9j/a3ktbHV0ZW5fMDAz/X3YyLmpwZz93PTM4/NDAmcT03NQ" alt="Hawaiian">
+      <h3>Hawaiian</h3>
+      <p>Classic pineapple & ham on tomato sauce base.</p>
+      <span class="price">$10.99</span>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/nMylsqG3U7_71uIq6ko5CXz7h9uReN61dEk9Om28zJU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWNp/cGVmdW5kLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvamV0LWZv/cm0tYnVpbGRlci9m/MTMzYzI0OWQ0YTI5/OTYxZDJmZDg3ZWU5/NzEzZTljMS8yMDIz/LzA4L1ZlZ2llLURl/aWdodC1QaXp6YS5w/bmc" alt="Veg Delight">
+      <h3>Veg Delight</h3>
+      <p>Crispy base with bell peppers, olives, and mushrooms.</p>
+      <span class="price">$10.49</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/DEATGRxHc6dIENsT5lz7UKFcCktrygCqKL1cYTUwqy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzM0Lzg1Lzc4/LzM2MF9GXzMzNDg1/NzgxOF96SVprZUJU/SVpyNGxySjI1aEls/RTVBbXV5dHBabnNy/ZC5qcGc" alt="Pizza Capricciosa">
+      <h3>Pizza Capricciosa</h3>
+      <p>Ham, mushrooms, artichokes, egg,.</p>
+      <span class="price">$13.49</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/HZET1vGbaJNT3riq8Q1Mn3lTTQRIB9qmFf2aKkysKaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jbG9zZS11cC1w/aXp6YS1wbGF0ZS10/YWJsZV8xMDQ4OTQ0/LTMwNjQzMDQ3Lmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDA" alt="Seafood Pizza">
+      <h3>Seafood Pizza</h3>
+      <p>Seafood such as fish, shellfish, or squid including pizza ai frutti di mare</p>
+      <span class="price">$14.49</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/QrGIsQgf0tIhGhyYRdA4azmzDzfcuc3jiFCVDyzruPc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy9zYW5f/bWFyemFub190b21h/dG9fcGl6emFfMTc3/OTdfMTZ4OS5qcGc" alt="Pizza Margherita">
+      <h3>Pizza Margherita</h3>
+      <p>Tomatoes, mozzarella, basil, originating from Naples, Italy.</p>
+      <span class="price">$13.49</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/cGNHt9fAiLkStABm96r9eQJmFEUeMe-6fDn8psHvIcs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudG1lY29zeXMu/Y29tL2ltYWdlL3Vw/bG9hZC90X3dlYl9y/ZHBfcmVjaXBlXzU4/NHg0ODAvaW1nL3Jl/Y2lwZS9yYXMvQXNz/ZXRzLzk3QzJDNzE4/LTUwMTUtNDM3Ri04/MzU1LTMxNkVFMDAw/RjU3Qy9EZXJpdmF0/ZXMvNTU2NDA5QkIt/MDJFMC00QkEzLUJD/MTYtRjQwOUY2MDlG/Q0VELmpwZw" alt="Pizza Marinara">
+      <h3>Pizza Marinara</h3>
+      <p>Tomato sauce, olive oil, oregano, garlic, with no cheese.</p>
+      <span class="price">$12.49</span>
+    </div>
+  </div>
+
+  <a href="#menu" class="view-full-menu">View Full Menu →</a>
+</section>
+<section class="offers-section">
+  <h2 class="section-title">⏳ Limited-Time Offers</h2>
+  <p class="offers-subtitle">Grab these hot deals before they’re gone!</p>
+
+  <div class="offers-grid">
+    <div class="offer-card">
+      <h3>🔥 2 for $12.99</h3>
+      <p>Get any 2 medium pizzas for just $12.99.</p>
+      <div class="countdown" id="countdown1">00:00:00</div>
+      <button class="cta-button small">Order Deal</button>
+    </div>
+
+    <div class="offer-card">
+       <h3>🍕 Family Combo</h3>
+      <p>2 Large pizzas + Sides + 2L Drink at $19.99</p>
+      <div class="countdown" id="countdown2">00:00:00</div>
+      <button class="cta-button small">Order Combo</button>
+    </div>
+  </div>
+</section>
+<script>
+  function startCountdown(id, endTime) {
+    const countdownEl = document.getElementById(id);
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      if (distance < 0) {
+        countdownEl.innerText = "Expired";
+        return;
+      }
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+
+  // Set end times (e.g., 1 hour from now)
+  const offerEnd1 = new Date().getTime() + 60 * 60 * 1000;
+  const offerEnd2 = new Date().getTime() + 2 * 60 * 60 * 1000;
+
+  startCountdown("countdown1", offerEnd1);
+  startCountdown("countdown2", offerEnd2);
+</script>
+<section id="location" class="location-section">
+  <h2 class="section-title">📍 Find Your Pizza Hut</h2>
+  <p class="location-subtitle">Enter your location to check delivery availability.</p>
+
+  <div class="location-container">
+    <form class="location-form">
+      <input type="text" placeholder="Enter your city or ZIP code" />
+      <button type="submit" class="cta-button small">Search</button>
+    </form>
+
+    <button class="use-location-button">📡 Use My Current Location</button>
+
+    <div class="delivery-info">
+      <h3>🚗 Fast Delivery</h3>
+      <p>Get your hot and fresh pizza delivered in under 30 minutes.*</p>
+    </div>
+  </div>
+</section>
+<section class="review-section">
+  <h2 class="section-title">⭐ What Our Customers Say</h2>
+  <p class="review-subtitle">Real reviews from real pizza lovers!</p>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <p class="review-text">"Absolutely love the crust and the quick delivery! My go-to comfort food every weekend."</p>
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="reviewer">– Shruti Gupta.</p>
+    </div>
+ <div class="review-card">
+      <p class="review-text">"Ordered the Veggie Supreme and it was hot, fresh, and full of flavor. Great service!"</p>
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <p class="reviewer">– Pritu Star.</p>
+    </div>
+
+    <div class="review-card">
+      <p class="review-text">"Family combo deal is the best bang for your buck. Always delivered on time!"</p>
+      <div class="review-stars">⭐⭐⭐⭐</div>
+      <p class="reviewer">– Manvi Yadav.</p>
+    </div>
+  </div>
+   <section id="contact" class="contact-section">
+  <h2 class="section-title">📬 Contact Us</h2>
+  <p class="contact-subtitle">Got questions, feedback, or craving requests? We'd love to hear from you!</p>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <input type="text" placeholder="Your Name" required />
+    </div>
+
+    <div class="form-group">
+      <input type="email" placeholder="Your Email" required />
+    </div>
+
+    <div class="form-group">
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="cta-button">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>🍕 STAR HUT</h3>
+      <p>Hot. Fresh. Delivered with love.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Deals</a></li>
+        <li><a href="#location">Locations</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact"> 
+      <h4>Contact</h4>
+      <p>Email: support@starhut.com</p>
+      <p>Phone: +1 800 123 4567</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; Designed by Shweta Kumari, Soni Marandi , Puja Kumari , Sunita Hembrom.
+      2025 STAR HUT. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
